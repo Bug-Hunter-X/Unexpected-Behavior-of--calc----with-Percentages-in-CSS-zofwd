@@ -1,0 +1,13 @@
+To solve this, ensure the parent container has a defined width.  Here's a corrected version:
+
+```css
+.container {
+  width: calc(50% - 10px);
+}
+
+.parent {
+  width: 800px; /* Or any defined width */
+}
+```
+
+By setting the `width` of the parent element (`.parent`), we provide a clear reference for the percentage calculation within `calc()`.  Alternatively, consider using viewport units (`vw`) or other absolute units if the width's relation to the parent is unimportant.
